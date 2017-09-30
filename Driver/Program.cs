@@ -14,7 +14,7 @@ namespace Driver
         {
             HTMLdecode.HTMLdecode htmlDecode = new HTMLdecode.HTMLdecode();
             WebClient webClient = new WebClient();
-            String html = webClient.DownloadString("http://kionier.com/");
+            String html = webClient.DownloadString("http://kionier.com/about/");
             htmlDecode.Startprocess(html);
             
             Console.ReadKey();
